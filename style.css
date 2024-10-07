@@ -1,0 +1,134 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+  
+/* Custom CSS */
+
+body {
+    background-color: #0d0d0d;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3B4MTM2NjcxMC1pbWFnZS1rd3Z4eGVxcC5qcGc.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2; 
+    z-index: -1; 
+}
+
+header {
+    background-color: #5e049f;
+    text-align: center;
+    color: #ffffffde;
+}
+
+main {
+    width: 90vw;
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
+section>p {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+section>h2 {
+    text-align: center;
+    margin-top: 2rem;
+    color: white;
+    text-shadow: 
+        1px 2px 0 #04aaaa; 
+}
+
+.times {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.time {
+    background-color: #232323;
+    border-radius: 10px;
+}
+
+.time figure img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.time-text {
+    padding: 1rem 1.5rem
+}
+
+.time-text h3, p {
+    color: #C0C0C0;
+}
+
+.time-text a {
+    color: #fff;
+    background-color: #04aaaa;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 1rem;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+footer {
+    background-color: #0a0f40;
+    padding: 0.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+@media only screen and (max-width: 992px) {
+    .times {
+        grid-template-columns: 1fr;
+    }
+}
